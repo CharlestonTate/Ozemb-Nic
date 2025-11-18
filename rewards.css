@@ -1,0 +1,344 @@
+/* Points Banner */
+.points-banner {
+  background: var(--background-secondary);
+  padding: var(--spacing-3xl) 0;
+}
+
+.points-display {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.points-card {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-dark) 100%);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-3xl);
+  box-shadow: var(--shadow-xl);
+  color: var(--text-white);
+  text-align: center;
+}
+
+.points-header {
+  margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.points-title {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--text-white);
+}
+
+.points-subtitle {
+  font-size: var(--font-size-lg);
+  margin: 0;
+  opacity: 0.9;
+  font-weight: var(--font-weight-normal);
+}
+
+.points-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+}
+
+.points-icon-wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+}
+
+.points-icon-wrapper svg {
+  width: 40px;
+  height: 40px;
+  color: var(--text-white);
+}
+
+.points-value-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+.points-label-text {
+  font-size: var(--font-size-base);
+  opacity: 0.8;
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.points-amount {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  line-height: 1;
+  color: var(--text-white);
+  font-family: var(--font-secondary);
+}
+
+/* Rewards Hero */
+.rewards-hero {
+  padding: var(--spacing-4xl) 0;
+}
+
+.how-it-works {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.instructions-card {
+  background: var(--background-primary);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.instruction-icon {
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.instruction-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.instructions-card h3 {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-2xl);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl);
+}
+
+.instruction-steps {
+  text-align: left;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.instruction-steps li {
+  padding: var(--spacing-md) 0;
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  font-size: var(--font-size-base);
+}
+
+.instruction-steps li strong {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Rewards Shop */
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reward-card {
+  background: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reward-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.reward-image {
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.reward-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: var(--border-radius-md);
+}
+
+.reward-info {
+  width: 100%;
+}
+
+.reward-info h3 {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xl);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.reward-points {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.points-value {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--secondary-color);
+}
+
+.points-label {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+}
+
+.reward-btn {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+
+.reward-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Game Section */
+.game-section {
+  background: var(--background-secondary);
+}
+
+.game-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--background-primary);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.game-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--spacing-lg);
+}
+
+.game-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--secondary-color);
+}
+
+#gameCanvas {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  background: var(--background-secondary);
+  cursor: pointer;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+.game-instructions {
+  text-align: center;
+  margin-top: var(--spacing-md);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .points-card {
+    padding: var(--spacing-2xl);
+  }
+
+  .points-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .points-main {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .points-value-wrapper {
+    align-items: center;
+  }
+
+  .points-amount {
+    font-size: var(--font-size-4xl);
+  }
+
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  #gameCanvas {
+    max-width: 100%;
+  }
+
+  .game-controls {
+    flex-direction: column;
+  }
+
+  .game-controls .btn {
+    width: 100%;
+  }
+}
+

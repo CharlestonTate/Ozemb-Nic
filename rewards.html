@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - Ozemb-Nic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="rewards.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html#home" class="nav-brand">
+                <img class="logo" src="img/logo1.png" style="width: 50%;"></img>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rewards.html" class="nav-link active">Rewards</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Points Display Banner -->
+    <section class="points-banner section" style="padding-top: calc(80px + var(--spacing-lg));">
+        <div class="container">
+            <div class="points-display reveal">
+                <div class="points-card">
+                    <div class="points-header">
+                        <h2 class="points-title">Ozemb-Nic Rewards</h2>
+                        <p class="points-subtitle">Puff for Points</p>
+                    </div>
+                    <div class="points-main">
+                        <div class="points-icon-wrapper">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div class="points-value-wrapper">
+                            <span class="points-label-text">Total Points</span>
+                            <span class="points-amount" id="totalPoints">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Shop Section -->
+    <section class="rewards-shop section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Rewards Shop</h2>
+                <p class="section-subtitle">Redeem your points for amazing rewards</p>
+            </div>
+            
+            <div class="rewards-grid">
+                <!-- Blackstone -->
+                <div class="reward-card reveal">
+                    <div class="reward-image">
+                        <img src="img/blackstone.png" alt="Blackstone" class="reward-img">
+                    </div>
+                    <div class="reward-info">
+                        <h3>Blackstone</h3>
+                        <div class="reward-points">
+                            <span class="points-value">6,683</span>
+                            <span class="points-label">points</span>
+                        </div>
+                        <button class="btn btn-primary reward-btn" data-item="blackstone" data-cost="6683" data-name="Blackstone">
+                            Redeem
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Zyn Yeti Tundra -->
+                <div class="reward-card reveal">
+                    <div class="reward-image">
+                        <img src="img/nicBOX.png" alt="Zyn Branded Yeti Tundra" class="reward-img">
+                    </div>
+                    <div class="reward-info">
+                        <h3>Zyn Branded Yeti Tundra</h3>
+                        <div class="reward-points">
+                            <span class="points-value">7,425</span>
+                            <span class="points-label">points</span>
+                        </div>
+                        <button class="btn btn-primary reward-btn" data-item="yeti" data-cost="7425" data-name="Zyn Branded Yeti Tundra">
+                            Redeem
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nespresso Vertuo Deluxe -->
+                <div class="reward-card reveal">
+                    <div class="reward-image">
+                        <img src="img/nesspresso.png" alt="Nespresso Vertuo Deluxe" class="reward-img">
+                    </div>
+                    <div class="reward-info">
+                        <h3>Nespresso Vertuo Deluxe</h3>
+                        <div class="reward-points">
+                            <span class="points-value">3,780</span>
+                            <span class="points-label">points</span>
+                        </div>
+                        <button class="btn btn-primary reward-btn" data-item="nespresso" data-cost="3780" data-name="Nespresso Vertuo Deluxe">
+                            Redeem
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flappy Bird Game Section -->
+    <section class="game-section section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Earn Points by Playing</h2>
+                <p class="section-subtitle">Play Flappy Nic to earn points! Each point scored = 1 reward point</p>
+            </div>
+            
+            <div class="game-container reveal">
+                <div class="game-header">
+                    <div class="game-stats">
+                        <div class="game-stat">
+                            <span class="stat-label">Score:</span>
+                            <span class="stat-value" id="gameScore">0</span>
+                        </div>
+                        <div class="game-stat">
+                            <span class="stat-label">Points Earned:</span>
+                            <span class="stat-value" id="pointsEarned">0</span>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="gameCanvas" width="400" height="600"></canvas>
+                <div class="game-controls">
+                    <button class="btn btn-primary" id="startGameBtn">Start Game</button>
+                    <button class="btn btn-outline" id="resetGameBtn" style="display: none;">Reset</button>
+                </div>
+                <div class="game-instructions">
+                    <p>Click or press SPACE to make Nic fly. Avoid the obstacles!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ozemb-Nic</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#purchase">Preorder</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ozemb-Nic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="rewards.js"></script>
+</body>
+</html>

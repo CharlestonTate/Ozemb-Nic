@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozemb-Nic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-brand">
+                <img class="logo" src="img/logo1.png" style="width: 50%;"></img>
+                <!-- <span class="logo-subtitle">Smithfield</span> -->
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#purchase" class="nav-link" style="cursor: pointer">Preorder</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rewards.html" class="nav-link">Rewards</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1 class="hero-title reveal">Welcome to <span style="color: skyblue"></span> Ozemb-Nic</h1>
+                <p class="hero-subtitle reveal">Effortlessly Skinny.</p>
+                <div class="hero-buttons reveal">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <img src="img/shaqpenis.png" alt="Ozembnic" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Us</h2>
+                <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <h3>Nomo Morenic</h3>
+                    <p>Is a wellness-tech company focused on modern, needle-free GLP-l delivery. We combine biochemistry, smart design, and a granted inhalable medicament patent to create simple, habit-forming solutions for metabolic health. Our mission is to make weight management easier, faster, and more accessible for today’s wellness consumer.</p>
+                </div>
+                <div class="about-image reveal-right">
+                    <img src="img/company1.png" alt="Ozembnic Company" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- <section id="services" class="services section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <h3>Service One</h3>
+                    <p class="service-time">Monday - Friday</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </div>
+                    <h3>Service Two</h3>
+                    <p class="service-time">Saturday - Sunday</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="8.5" cy="7" r="4"/>
+                            <path d="M20 8v6M23 11l-3 3-3-3"/>
+                        </svg>
+                    </div>
+                    <h3>Service Three</h3>
+                    <p class="service-time">Available 24/7</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="purchase section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get Ozemb-Nic</h2>
+                <p class="section-subtitle">Start your journey to effortless weight management today</p>
+            </div>
+            <div class="purchase-content">
+                <div class="product-showcase reveal-left">
+                    <div class="product-image">
+                        <img src="img/nic2.png" alt="Ozembnic Product" class="product-img">
+                    </div>
+                </div>
+                <div class="product-details reveal-right">
+                    <h3>Ozemb-Nic Starter Kit</h3>
+                    <p class="product-description">Experience the future of weight management with our innovative inhalable GLP-l delivery system. No needles, no hassle, just results.</p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Needle-free delivery system</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Habit-forming design</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>30-day supply included</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <div class="price-main">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="price-note">One-time preorder: $299</p>
+                    </div>
+
+                    <div class="purchase-options">
+                        <a href="rewards.html" class="btn btn-primary btn-large">Preorder Now</a>
+                        <a href="#contact" class="btn btn-outline btn-large">Contact Sales</a>
+                    </div>
+
+                    <div class="payment-badges">
+                        <p class="payment-text">Secure checkout with:</p>
+                        <div class="badge-group">
+                            <img src="img/paypal.png" alt="PayPal" class="payment-badge">
+                            <img src="img/venmo.png" alt="Venmo" class="payment-badge">
+                            <img src="img/googlepay.png" alt="Google Pay" class="payment-badge">
+                            <img src="img/tiktokshop.png" alt="Tiktok Shop" class="payment-badge" style="max-width: 200%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="staff section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Meet the Parents</p>
+            </div>
+            <div class="staff-grid">
+                <div class="staff-card reveal">
+                    <div class="staff-image">
+                        <img src="img/will2.png" alt="Will Sims" class="staff-photo">
+                    </div>
+                    <div class="staff-info">
+                        <h3>Will Sims</h3>
+                        <p class="staff-role">Team Member</p>
+                        <p>Lead in Ozemb-Nic Engineering. Ensuring all the nic, and no poop. Also a New York Times best selling author.</p>
+                    </div>
+                </div>
+                <div class="staff-card reveal">
+                    <div class="staff-image">
+                        <img src="img/logan1.png" alt="Logan McAurther" class="staff-photo">
+                    </div>
+                    <div class="staff-info">
+                        <h3>Logan McAurther</h3>
+                        <p class="staff-role">Team Member</p>
+                        <p>Lead in Marketing Ozemb-nic to the world. Also a New York Times best selling author.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Contact Us</h2>
+                <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>College of Engineering Building, TEGR 356 A</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>(+1-760-706-7425)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <h3>Get in Touch</h3>
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ozemb-Nic</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#purchase" style="cursor: pointer">Preorder</a>
+                    <a href="rewards.html">Rewards</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ozemb-Nic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Theme Toggle -->
+    <!-- <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark theme">
+        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button> -->
+
+    <!-- Chatbot Button -->
+    <!-- <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chatbot" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+        </svg>
+    </button> -->
+
+    <!-- <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Swe7v1tCpGKNgPF_66vAx";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
